@@ -12,5 +12,5 @@ app = Flask(__name__)
 @app.route('/webhook', methods=['POST'])
 def respond():
     fave_language = request.json;
-    print("I like coding in " + fave_language + " the most")
+    print("I like coding in ", fave_language);
     return Response(status=200)
