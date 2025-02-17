@@ -11,5 +11,5 @@ app = Flask(__name__)
 
 @app.route('/webhook', methods=['POST'])
 def respond():
-    print(request.json);
+    print("Hello this is the request JSON : "+request.json);
     return Response(status=200)
